@@ -19,6 +19,7 @@ public class GameDTO {
     public GameDTO() {
     }
 
+    //Se usar o beanutils precisa gerar tanto os getters como os setters
     public GameDTO(Game entity){
         BeanUtils.copyProperties(entity, this);
     }
